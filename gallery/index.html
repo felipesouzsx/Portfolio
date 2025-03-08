@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe de Souza - Gallery</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../gallery/index.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../components/nav/nav.comp.css">
+    <link rel="stylesheet" href="../components/footer/footer.comp.css">
+</head>
+<body>
+    <!-- NAV ELEMENT ----------------------------------------->
+    <div id="nav-container">
+        <nav>
+            <section id="nav-left">
+                <a href="../">Home</a>
+                <p id="current-page">Gallery</p>
+                <a href="../projects">Projects</a>
+                <a href="../about">About</a>
+            </section>
+            <section id="nav-right">
+                <button onclick="scrollToBottom()">
+                    <img src="../images/icons/contact.svg" alt="">
+                </button>
+            </section>
+        </nav>
+    </div>
+    <!-- NAV ELEMENT ----------------------------------------->
+
+    <main class="section-container">
+        <header>
+            <h1>Gallery</h1>
+            <section id="choices">
+                <button class="category-button active" data-category="all">All</button>
+                <button class="category-button" data-category="minecraft">Minecraft</button>
+                <button class="category-button" data-category="pixelart">Pixel-Art</button>
+            </section>
+        </header>
+
+        <div class="images pixelart">
+            <img class="pixel-image" src="../images/pixelart/arthur_morgan.png" alt="">
+            <img class="pixel-image" src="../images/pixelart/joel.png" alt="">
+            <img class="pixel-image" src="../images/pixelart/apple.png" alt="">
+            <img class="pixel-image" src="../images/pixelart/shark_mockup.png" alt="">
+            <img class="pixel-image" src="../images/pixelart/fossil_game.png" alt="">
+            <img class="pixel-image" src="../images/pixelart/village_square.png" alt="">
+            <img class="pixel-image" src="../images/pixelart/river_house.png" alt="">
+            <img class="pixel-image" src="../images/pixelart/war_landscape.png" alt="" style="grid-column: span 2;">
+            <img class="pixel-image" src="../images/pixelart/kelp_forest.png" alt="" style="grid-column: span 2;">
+            <img class="pixel-image" src="../images/pixelart/morning_mountains.png" alt="">
+            <div class="proprietary-image" style="background-color: var(--transparent-light);">
+                <img class="pixel-image" src="../images/pixelart/fish_items.png" alt="Fish items, containing a Tuna, a Sardine, a Red Snapper and a Jellyfish. Each with cooked and on-bucket sprites.">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <div class="proprietary-image" style="background-color: var(--transparent-light);">
+                <img class="pixel-image" src="../images/pixelart/furniture_tools.png" alt="Tool items. There's a bug net, a watering can and a mug.">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <div class="proprietary-image" style="background-color: var(--transparent-light);">
+                <img class="pixel-image" src="../images/pixelart/foods.png" alt="Ocean food items. There's a coconut, an open coconut, a raw crab and a cooked crab sprite">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <div class="proprietary-image" style="grid-column: span 2;">
+                <img src="../images/pixelart/encyclopedia.gif" alt="An open book with a page turn animation">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+        </div>
+
+        <div class="images minecraft">
+             <div class="proprietary-image">
+                <img src="../images/models/jumpscare_head.gif" alt="Jumpscare Head Persona item">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <div class="proprietary-image">
+                <img src="../images/models/gameplay_tv_head.gif" alt="Gameplay Head Persona item">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <div class="proprietary-image">
+                <img src="../images/models/overgrown_skeleton.gif" alt="Overgrown Skeleton Persona item">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <div class="proprietary-image">
+                <img src="../images/models/robot_dinosaur_head.gif" alt="Robot Dinosaur Head Persona item">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <div class="proprietary-image">
+                <img src="../images/models/steamboat_willie.gif" alt="">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <div class="proprietary-image">
+                <img src="../images/models/plant_monster.gif" alt="Plant monster surrounded by pink flowers that screams. The flowers close during the scream.">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <div class="proprietary-image">
+                <img src="../images/models/metal_blocks.png" alt="Pile of metal blocks. One of them looks brand-new, another is oxidyzed and the last one is covered in algae.">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <div class="proprietary-image">
+                <img src="../images/models/palm_blocks.png" alt="Pile of palm tree blocks. Contains a log, a stripped log and planks block.">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <div class="proprietary-image">
+                <img src="../images/models/coral_blocks.png" alt="Pile of coral blocks. There's an orange, a pink, and a green one.">
+                <div class="team-details xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games">
+                    <p>Property of XP Games</p>    
+                </div>
+            </div>
+            <img src="../images/models/skin_felipe.png" alt="Velociraptor">
+            <img src="../images/models/skin_frieren.png" alt="Velociraptor">
+            <img src="../images/models/skin_geraldo.png" alt="Velociraptor">
+            <img src="../images/models/skin_sam.png" alt="Velociraptor">
+            <img src="../images/models/velociraptor.png" alt="Velociraptor">
+            <img src="../images/models/piglin_barbarian.png" alt="Big piglin holding a wrecking ball. It's wearing metal shoulder pads and a mask of the same material">
+        </div>  
+    </main>
+
+    <!-- FOOTER ELEMENT -------------------------------------->
+    <div id="footer-container"">
+        <footer>
+            <h1>Let's Talk!</h1>
+            <section>
+                <p>Discord</p>
+                <div class="copy-field">
+                    <p>felipebdc</p>
+                    <button class="copy-button" onclick="copyToClipboard('felipebdc')">
+                        <img src="../images/icons/copy.svg" alt="">
+                    </button>
+                </div>
+            </section>
+            <section>
+                <p>E-mail</p>
+                <div class="copy-field">
+                    <p>im.felipemontsouza@gmail.com</p>
+                    <button class="copy-button" onclick="copyToClipboard('im.felipemontsouza@gmail.com')">
+                        <img src="../images/icons/copy.svg" alt="">
+                    </button>
+                </div>
+            </section>
+            <section id="socials">
+                <a href="https://github.com/felipesouzsx" target="_blank">
+                    <img src="../images/icons/github.svg" alt="GitHub">
+                </a>
+            </section>
+        </footer>
+    </div>
+    <!-- FOOTER ELEMENT -------------------------------------->
+</body>
+<script src="../gallery/gallery.js"></script>
+<script src="../global.js"></script>
+<script src="../components/footer/footer.comp.js"></script>
+</html>

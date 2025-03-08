@@ -1,0 +1,98 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+header {
+    text-align: center;
+}
+header img {
+    width: clamp(5rem, 50dvw, 15rem);
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+    margin-bottom: 0;
+    font-family: 'Caveat';
+    font-size: min(10dvw, 3rem);
+}
+
+section > h1 {
+    margin-top: 2rem;
+}
+
+
+section {
+    text-align: justify;
+    justify-content: center;
+}
+
+section > img {
+    width: 100%;
+    width: min(100%, 50ch);
+}
+
+
+#team-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    padding: 0;
+}
+
+#team-list img {
+    width: 5ch;
+}
+
+#team-list li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background-color);
+    color: var(--color);
+    width: 1fr;
+    aspect-ratio: 1/1;
+
+    padding: 0.5rem;
+}
+
+#team-list li > div {
+    width: 100%;
+}
+
+#team-list li > div > h2 {
+    font-weight: 500;
+}
+
+
+.toolset {
+    display: flex;
+    gap: 2rem;
+}
+
+.toolset > a > img {
+    width: 5ch;
+}
+
+
+
+@media (max-width: 800px) {
+    #team-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #team-list li {
+        flex-direction: row;
+        aspect-ratio: unset;
+        justify-content: space-between;
+    }
+    #team-list li > div {
+        text-align: center;
+    }
+}

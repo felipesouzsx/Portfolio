@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+html {
+    --website-width: min(calc(100% - 1.5rem), 90ch);
+
+    --small-font-size: clamp(0.9rem, 1.5dvw, 1.25rem);
+    --medium-font-size: clamp(1.2rem, 1.8dvw, 1.6rem);
+    --large-font-size: clamp(1.3rem, 1.9dvw, 1.7rem);
+    --larger-font-size: clamp(1.5rem, 2.1dvw, 2.1rem);
+
+    --color-darker: #202020;
+    --color-medium: #c7c7c7;
+    --transparent-darker-darkest: #0000009f;
+    --transparent-darker: #0000003f;
+    --transparent-light: #ffffff1c;
+    --transparent-lighter: #ffffff7f;
+
+    /* shows scrollbar even if there's nothing to scroll to.
+    for consistency. */
+    overflow-y: scroll;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    font-family: "Inter";
+    background-color: var(--color-darker);
+    color: var(--transparent-lighter);
+}
+
+main {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+h1, h2, h3, p, div {
+    margin: 0;
+    cursor: default;
+}
+h1 {
+    font-size: var(--larger-font-size);
+    font-weight: 600;
+}
+h2 {
+    font-size: var(--large-font-size);
+    font-weight: 300;
+}
+h3 {
+    font-size: var(--medium-font-size);
+    font-weight: 200;
+}
+
+
+
+a, button {
+    all: unset;
+    transition: 200ms;
+    border: 1px solid transparent;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a, button, label {
+    cursor: pointer;
+}
+
+a > img {
+    filter: opacity(50%);
+}
+
+a:hover > img {
+    filter: opacity(100%);
+}
+
+button {
+    height: 100%;
+    transition: 200ms;
+}
+
+a:hover, button:hover {
+    color: white;
+}
+
+a:focus, button:focus {
+    transition: none !important;
+    border: 1px solid var(--transparent-lighter);
+}
+
+
+
+
+article {
+    margin-bottom: 5rem;
+    text-align: left;
+}
+article * {
+    padding: 0;
+}
+article h1#first-header {
+    margin-top: 0;
+}
+
+
+
+.object-position-left {
+    object-position: left;
+}
+.object-position-right {
+    object-position: right;
+}
+.hide-on-desktop {
+    display: none;
+}
+.centered-text {
+    text-align: center;
+}
+
+
+.section-container {
+    width: var(--website-width);
+    place-self: center;
+}
+.showcase-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--transparent-lighter);
+    align-items: end;
+    margin-bottom: 1rem;
+    padding-bottom: 0.25rem;
+    font-size: var(--small-font-size);
+}
+.showcase-header > a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+.showcase-header > a:hover {
+    color: white;
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    img {
+        background-color: var(--transparent-darker);
+        width: 100%;
+        height: 100%;
+        place-self: center;
+        object-fit: cover;
+    }
+}
+
+.images > .proprietary-image {
+    --image-height: 5ch;
+
+    position: relative;
+    display: flex;
+    justify-content: end;
+    font-size: 0.8rem;
+
+    .team-details {
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0.5rem;
+
+        border-radius: 0.25rem;
+        width: var(--image-height);
+        overflow: hidden;
+
+        text-wrap: nowrap;
+
+        transition: 200ms;
+        background-color: var(--background-color);
+        color: var(--color);
+        filter: opacity(50%);
+    }
+    .team-details > img {
+        width: var(--image-height);
+    }
+
+    .team-details > p {
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        max-height: var(--image-height);
+    }
+}
+
+.images img:hover + .team-details {
+    width: calc(100% - 1rem);
+    filter: opacity(100%);
+}
+
+
+.eternal-creations {
+    --background-color: #9e42ff;
+    --color: white;
+}
+.xp-games {
+    --background-color: #050510;
+    --color: #7dd420;
+}
+.tinkrew {
+    --background-color: #f8c53a;
+    --color: black;
+}
+.kubo-studios {
+    --background-color: #14f2e7;
+    --color: #021aae;
+}
+
+.pixel-image {
+    image-rendering: pixelated;
+}
+
+
+
+
+
+@media(max-width: 800px) {
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    .hide-on-desktop {
+        display: block;
+    }
+
+    .images > .proprietary-image > .team-details {
+        text-wrap: wrap;
+    }
+}

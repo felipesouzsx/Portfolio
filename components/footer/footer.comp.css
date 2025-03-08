@@ -1,0 +1,82 @@
+#footer-container {
+    --padding: 4rem;
+    padding-top: var(--padding);
+    padding-bottom: calc(var(--padding) * 1.5);
+
+    background-color: var(--transparent-darker-darkest);
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: calc(var(--website-width) - 2rem);
+    max-width: 50ch;
+}
+footer h1, 
+footer section > p {
+    text-align: center;
+}
+footer h1 {
+    font-size: clamp(1rem, 15dvw, 4.5rem);
+    font-family: "Caveat";
+    margin-bottom: 1rem;
+}
+footer > section > p {
+    color: var(--transparent-lighter);
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+
+.copy-field {
+    display: flex;
+    border: 2px solid var(--transparent-light);
+    align-items: center;
+    color: var(--transparent-lighter);
+}
+.copy-field > p {
+    width: 100%;
+    margin-left: 1rem;
+    text-align: inherit;
+}
+.copy-field button {
+    border-radius: 0;
+    border: 2px solid transparent;
+    width: 5ch;
+    aspect-ratio: 1/1;
+    text-align: center;
+}
+
+
+.copy-field button > img {
+    filter: opacity(25%);
+    transition: 200ms;
+}
+
+.copy-field button:hover {
+    img {
+        filter: opacity(100%);
+    }
+}
+.copy-field button:hover, .copy-field button:active {
+    background-color: var(--transparent-light);
+}
+.copy-field button:focus {
+    border: 2px solid var(--transparent-light);
+}
+
+
+#socials {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#socials img {
+    width: 4ch;
+}

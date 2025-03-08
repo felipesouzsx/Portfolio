@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: min(15dvw, 6rem);
+    font-family: "Caveat";
+    margin-bottom: 2rem;
+}

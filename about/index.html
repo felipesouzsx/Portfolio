@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe de Souza - About</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../about/index.css">
+    <link rel="stylesheet" href="../components/nav/nav.comp.css">
+    <link rel="stylesheet" href="../components/footer/footer.comp.css">
+</head>
+<body>
+    <!-- NAV ELEMENT ----------------------------------------->
+    <div id="nav-container">
+        <nav>
+            <section id="nav-left">
+                <a href="../">Home</a>
+                <a href="../gallery">Gallery</a>
+                <a href="../projects">Projects</a>
+                <p id="current-page">About</p>
+            </section>
+            <section id="nav-right">
+                <button onclick="scrollToBottom()">
+                    <img src="../images/icons/contact.svg" alt="Contact">
+                </button>
+            </section>
+        </nav>
+    </div>
+    <!-- NAV ELEMENT ----------------------------------------->
+
+    <main class="section-container">
+        <header>
+            <img src="../images/felipe.jpg" alt="Felipe">
+            <h1>Heyo! I'm Felipe</h1>
+        </header>
+        <section>
+            I'm a freelancer Artist and solo Game Developer. I've been developing
+            games for <strong>a few years</strong> now. I'm currently pursuing a degree in
+            <strong>System Analisys and Development</strong> while working on
+            the <strong>Minecraft Marketplace</strong> as an artist!
+            So far i've released two games, one of them was a submission for the
+            <a href="https://gamemakerstoolkit.com/jam/" target="_blank">GMTK Game Jam</a>.
+        </section>
+        <h1>The Marketplace</h1>
+        <section>
+            I started working for Minecraft Marketplace studios as a freelancer during the
+            pandemic, and found myself being part of many amazing teams as time
+            went on, helping them bring their ideas to life. 
+            <strong>So far, i've been part of the following teams:</strong>
+            <ul id="team-list">
+                <li class="kubo-studios">
+                    <img src="../images/teams/kubo_studios.jpg" alt="Kubo Studios Logo">
+                    <div>
+                        <h2>Kubo Studios</h2>
+                        <p>2020 - 2021</p>
+                    </div>
+                </li>
+                <li class="tinkrew">
+                    <img src="../images/teams/tinkrew.png" alt="Tinkrew Logo">
+                    <div>
+                        <h2>Tinkrew</h2>
+                        <p>2021 - 2023</p>
+                    </div>
+                </li>
+                <li id="current" class="xp-games">
+                    <img src="../images/teams/xp_games.png" alt="XP Games Logo">
+                    <div>
+                        <h2>XP Games</h2>
+                        <p>2022 - Now</p>
+                    </div>
+                </li>
+                <li id="current" class="eternal-creations">
+                    <img src="../images/teams/eternal_creations.png" alt="Eternal Creations Logo">
+                    <div>
+                        <h2>EternalCreations</h2>
+                        <p>2024 - Now</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <h1>My Toolset</h1>
+        <section class="toolset">
+            <a href="https://www.blockbench.net/" target="_blank">
+                <img src="../images/icons/blockbench.svg" alt="Blockbench (3D Modelling Software for Minecraft)">
+            </a>
+            <a href="https://www.aseprite.org/" target="_blank">
+                <img src="../images/icons/aseprite.svg" alt="Aseprite (Pixel Art Software)">
+            </a>
+            <a href="https://godotengine.org/" target="_blank">
+                <img src="../images/icons/godot.svg" alt="Godot Game Engine">
+            </a>
+            <a href="https://git-scm.com/" target="_blank">
+                <img src="../images/icons/git.svg" alt="Git">
+            </a>            
+        </section>
+    </main>
+
+    <!-- FOOTER ELEMENT -------------------------------------->
+    <div id="footer-container"">
+        <footer>
+            <h1>Let's Talk!</h1>
+            <section>
+                <p>Discord</p>
+                <div class="copy-field">
+                    <p>felipebdc</p>
+                    <button class="copy-button" onclick="copyToClipboard('felipebdc')">
+                        <img src="../images/icons/copy.svg" alt="">
+                    </button>
+                </div>
+            </section>
+            <section>
+                <p>E-mail</p>
+                <div class="copy-field">
+                    <p>im.felipemontsouza@gmail.com</p>
+                    <button class="copy-button" onclick="copyToClipboard('im.felipemontsouza@gmail.com')">
+                        <img src="../images/icons/copy.svg" alt="">
+                    </button>
+                </div>
+            </section>
+            <section id="socials">
+                <a href="https://github.com/felipesouzsx" target="_blank">
+                    <img src="../images/icons/github.svg" alt="GitHub">
+                </a>
+            </section>
+        </footer>
+    </div>
+    <!-- FOOTER ELEMENT -------------------------------------->
+</body>
+<script src="./gallery/gallery.js"></script>
+<script src="../global.js"></script>
+<script src="../components/footer/footer.comp.js"></script>
+</html>

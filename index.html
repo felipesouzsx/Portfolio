@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="page-name" content="Home">
+    <title>Felipe de Souza - Portfolio</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="components/nav/nav.comp.css">
+    <link rel="stylesheet" href="components/project/project.comp.css">
+    <link rel="stylesheet" href="components/footer/footer.comp.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <!-- NAV ELEMENT ----------------------------------------->
+    <div id="nav-container">
+        <nav>
+            <section id="nav-left">
+                <p id="current-page">Home</p>
+                <a href="/gallery">Gallery</a>
+                <a href="/projects">Projects</a>
+                <a href="/about">About</a>
+            </section>
+            <section id="nav-right">
+                <button onclick="scrollToBottom()">
+                    <img src="../images/icons/contact.svg" alt="">
+                </button>
+            </section>
+        </nav>
+    </div>
+    <!-- NAV ELEMENT ----------------------------------------->
+
+    <main class="section-container">
+        <header>
+            <img src="images/felipe.jpg" alt="" style="image-rendering: auto;">
+            <section>
+                <h1>Felipe de Souza</h1>
+                <h2>Pixel Artist - Game Developer</h2>
+            </section>
+        </header>
+
+        <article>
+            <div class="showcase-header">
+                latest artworks
+                <a href="/gallery">see more</a>
+            </div>
+            <div class="images">
+                <img src="images/pixelart/arthur_morgan.png" alt="">
+                <img src="images/pixelart/joel.png" alt="">
+                <img class="hide-on-mobile" src="images/pixelart/apple.png" alt="">
+                <img src="images/pixelart/kelp_forest.png" alt="" style="grid-column: span 2;">
+                <img src="images/pixelart/morning_mountains.png" alt="">
+                <img class="hide-on-desktop" src="images/pixelart/apple.png" alt="">
+            </div>
+        </article>
+
+        <article>
+            <div class="showcase-header">
+                recent projects
+                <a href="/projects">see more</a>
+            </div>
+            <section class="projects">
+
+                <!-- PROJECT ELEMENT ------------------------------------->
+                <div class="project">
+                    <img class="pixel-image" src="images/projects/jurassic_run.png" alt="A blue, biped dinosaur(velociraptor) standing in a desert. The title says 'Jurassic Run'">
+                    <section>
+                        <div id="header">
+                            <h1>Jurassic Run</h1>
+                            <h3>2024</h3>
+                        </div>
+                        <p>
+                            My own take on the Chrome Dinosaur game!
+                            Made with the goal of learning project organization on the
+                            <a href="https://godotengine.org" target="_blank">Godot Engine</a>.
+                        </p>
+                        <div id="links">
+                            <a href="https://felipebdc.itch.io/jurassic_run" target="_blank">
+                                <img src="images/icons/open.svg" alt="">
+                            </a>
+                            <a href="https://github.com/felipesouzsx/JurassicRun" target="_blank">
+                                <img src="images/icons/github.svg" alt="">
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <!-- PROJECT ELEMENT ------------------------------------->
+
+                <!-- PROJECT ELEMENT ------------------------------------->
+                <div class="project">
+                    <img src="images/projects/shark_website.png" alt="A blue, biped dinosaur(velociraptor) standing in a desert. The title says 'Jurassic Run'">
+                    <section>
+                        <div id="header">
+                            <h1>Shark Website</h1>
+                            <h3>2024</h3>
+                        </div>
+                        <p>
+                            A simple website using <strong>HTML5</strong> and <strong>CSS3</strong>. Made for fun
+                            as a small project.
+                        </p>
+                        <div id="links">
+                            <a href="https://shark-website-hazel.vercel.app/" target="_blank">
+                                <img src="images/icons/open.svg" alt="Open">
+                            </a>
+                            <a href="https://github.com/felipesouzsx/SharkWebsite" target="_blank">
+                                <img src="images/icons/github.svg" alt="GitHub">
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <!-- PROJECT ELEMENT ------------------------------------->
+
+            </section>
+        </article>
+    </main>
+
+    <!-- FOOTER ELEMENT -------------------------------------->
+    <div id="footer-container"">
+        <footer>
+            <h1>Let's Talk!</h1>
+            <section>
+                <p>Discord</p>
+                <div class="copy-field">
+                    <p>felipebdc</p>
+                    <button class="copy-button" onclick="copyToClipboard('felipebdc')">
+                        <img src="../images/icons/copy.svg" alt="Copy">
+                    </button>
+                </div>
+            </section>
+            <section>
+                <p>E-mail</p>
+                <div class="copy-field">
+                    <p>im.felipemontsouza@gmail.com</p>
+                    <button class="copy-button" onclick="copyToClipboard('im.felipemontsouza@gmail.com')">
+                        <img src="../images/icons/copy.svg" alt="Copy">
+                    </button>
+                </div>
+            </section>
+            <section id="socials">
+                <a href="https://github.com/felipesouzsx" target="_blank">
+                    <img src="../images/icons/github.svg" alt="GitHub">
+                </a>
+            </section>
+        </footer>
+    </div>
+    <!-- FOOTER ELEMENT -------------------------------------->
+
+</body>
+<script src="global.js"></script>
+<script src="components/footer/footer.comp.js"></script>
+</html>

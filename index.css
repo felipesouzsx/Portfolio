@@ -1,0 +1,20 @@
+header {
+    --padding: 5rem;
+    text-align: center;
+    padding-bottom: var(--padding);
+}
+
+header h1 {
+    color: white;
+    font-size: min(15dvw, 6rem);
+    font-family: "Caveat";
+    margin-top: 2rem;
+}
+
+header h2 {
+    font-size: var(--small-font-size);
+}
+
+header img {
+    width: clamp(5rem, 50dvw, 15rem);
+}

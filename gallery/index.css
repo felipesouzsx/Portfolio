@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: min(15dvw, 6rem);
+    font-family: "Caveat";
+    margin-bottom: 2rem;
+}
+
+
+
+#choices {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background-color: var(--transparent-darker);
+    width: min(var(--website-width), 50ch);
+    place-self: center;
+}
+
+
+#choices > button {
+    width: 100%;
+    padding: 1rem;
+}
+#choices > button:hover {
+    background-color: var(--transparent-light);
+}
+#choices > button.active {
+    background-color: var(--transparent-light);
+    color: white;
+}
